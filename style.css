@@ -4,11 +4,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppings', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    
     color: #ededed;
     background: transparent;
 }
@@ -42,7 +41,7 @@ body {
 .logo {
     position: relative;
     font-size: 27px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #e6e6eb;
     text-decoration: none;
     font-weight: 700;
@@ -60,7 +59,7 @@ body {
     animation-delay: .4s;
 }
 
-.navbar a{
+.navbar a {
     font-size: 24px;
     font-family: 'Times New Roman', Times, serif;
     color: azure;
@@ -72,7 +71,7 @@ body {
 
 .navbar a:hover,
 .navbar a.active {
-    color:#0c0b43;
+    color: #0c0b43;
 }
 
 .home {
@@ -112,7 +111,6 @@ body {
     animation: showRight 1s ease forwards;
     animation-delay: 1s;
 }
-
 
 .home-content h3 {
     position: relative;
@@ -157,7 +155,6 @@ body {
     animation-delay: 1.6s;
 }
 
-
 .home-content .btn-box {
     position: relative;
     display: flex;
@@ -188,7 +185,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 165px;
-    height:100%;
+    height: 100%;
     background: #00abf0;
     border: 2px solid #00abf0;
     border-radius: 8px;
@@ -208,13 +205,11 @@ body {
 }
 
 .btn-box a:nth-child(2):hover {
-    color:#081b29;
-
+    color: #081b29;
 }
 
 .btn-box a:nth-child(1):hover {
-    color:#081b29;
-
+    color: #081b29;
 }
 
 .btn-box a:nth-child(2)::before {
@@ -336,11 +331,33 @@ body {
     z-index: 2;
 }
 
-
 /*KEYFRAMES ANIMATION*/
-@keyframes showRight{
-    100%{
-        width:0;
+@keyframes showRight {
+    100% {
+        width: 0;
     }
 }
 
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .home-content h1 {
+        font-size: 30px;
+    }
+
+    .home-content h3 {
+        font-size: 24px;
+    }
+
+    .home-content p {
+        font-size: 16px;
+    }
+
+    .btn-box {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .btn-box a {
+        width: 80%;
+        margin-bottom: 10px;
